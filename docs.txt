@@ -1,0 +1,32 @@
+Face recognition:
+
+OpenCV cascades: (A waterfall or series of waterfalls)
+    - It breaks the problem of detecting faces into multiple  stages.
+    - For each block block a very rough and quick test is done.
+    - 30 to 50 stages may be considered.
+    - Cascades is just a bunch of XML files.
+    - Contains OpenCV data used to detect objects.
+    - OpenCV comes with a number of built-in cascades for detecting everything from faces to eyes to hands to legs.
+
+Install OpenCV to proceed to next steps
+
+Step 1: 
+        -Import OpenCV and write face detection code using haar cascades
+        -Use webCam to detect in real time.
+
+Step 2: 
+        -Save cropped images in a another folder.
+        -Create a function which saves when pressed s on the keyboard.
+        
+        def saveImage(img,userName,userId,imgId):
+             Path("dataset/{}".format(userName)).mkdir(parents=True,exist_ok=True) // This choose the location of folder to store the images.
+
+
+             cv2.imwrite("dataset/{}/{}_{}.jpg".format(userName,userId,imgId),img) // This species the naming and in which format the images to be saved.
+
+
+Step 3:
+        -Find ROI (region of interest)
+        -Here ROI is only the face.           
+
+
