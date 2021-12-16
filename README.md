@@ -16,6 +16,8 @@ Step 3:
 
     Input the id: The sequential order at which the person face was added.
         Ex: For 1st person id = 1 for 8th person id = 8.
+    
+    Input the name.
 
     Click button "s" six times to take add the face of the person.
 
